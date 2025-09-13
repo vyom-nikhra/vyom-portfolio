@@ -1,19 +1,19 @@
-# Sat Naing Portfolio & Blog
+# Vyom Nikhra Portfolio
 
-![satnaing-portfolio-and-blog](https://user-images.githubusercontent.com/53733092/169645862-d1dda9cb-482f-4428-a63c-8eaf6910ab35.png)
-![ts](https://badgen.net/badge/Built%20With/TypeScript/blue) ![vercel](https://img.shields.io/github/deployments/satnaing/my-portfolio/production?label=vercel&logo=vercel&logoColor=white)
+![vyom-nikhra-portfolio](https://user-images.githubusercontent.com/53733092/169645862-d1dda9cb-482f-4428-a63c-8eaf6910ab35.png)
+![ts](https://badgen.net/badge/Built%20With/TypeScript/blue) ![vercel](https://img.shields.io/github/deployments/vyom-nikhra/vyom-portfolio/production?label=vercel&logo=vercel&logoColor=white)
 
-My portfolio & blog website developed with Next.JS(SSG) and TypeScript. Tailwind CSS and GSAP is used for styling and animations. Blog contents are written in Markdown format. Light & Dark themes supported.
+My personal portfolio website developed with Next.JS and TypeScript. Features responsive design, smooth animations, and showcases my projects including Demeter AI and Adobe work. Built with modern web technologies and optimized for performance.
 
 ## Features
 
 - Responsive Design 📱💻
 - Light & Dark themes ☀️🌙
 - Fully Accessible ♿️
-- Categories, Tags 🏷
-- Search Box 👀
+- Smooth GSAP Animations ✨
+- Project Showcase �
 - SEO Friendly 🔎
-- Markdown Content 📰
+- Modern UI/UX 🎨
 
 ## Tech Stack
 
@@ -22,14 +22,13 @@ My portfolio & blog website developed with Next.JS(SSG) and TypeScript. Tailwind
 **Animations** - [GSAP](https://greensock.com/)  
 **Design & Prototype** - [Figma](https://figma.com/)  
 **State Management** - [ContextAPI](https://reactjs.org/docs/context.html)  
-**Backend** - [Forestry Headless CMS](https://forestry.io/)  
 **Deployment** - [Vercel](https://vercel.com/)
 
 ## Lighthouse Score
 
 <p align="center">
-  <a href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fsatnaing.dev%2F&form_factor=desktop">
-    <img width="710" alt="Sat Naing Portfolio Website Lighthouse Score" src="public/lighthouse-result.svg">
+  <a href="https://pagespeed.web.dev/">
+    <img width="710" alt="Vyom Nikhra Portfolio Website Lighthouse Score" src="public/lighthouse-result.svg">
   <a>
 </p>
 
@@ -38,16 +37,14 @@ My portfolio & blog website developed with Next.JS(SSG) and TypeScript. Tailwind
 Clone the project
 
 ```bash
-git clone https://github.com/satnaing/satnaing.dev.git
+git clone https://github.com/vyom-nikhra/vyom-portfolio.git
 ```
 
 Go to the project directory
 
 ```bash
-cd satnaing.dev
+cd vyom-portfolio
 ```
-
-Remove remote origin
 
 ```bash
 git remote remove origin
@@ -65,17 +62,14 @@ Start the server
 npm run dev
 ```
 
-## Inspiration and Credits
+## Credits and Inspiration
 
-Here are some inspiration and credits for the design of my portfolio. However I can guarantee that I wrote 100% of the code. These credits are just for ideas and design for my portfolio and blog website.
+Design inspiration from various modern portfolio websites. The original template was created by [Sat Naing](https://satnaing.dev) and customized for personal use.
 
 - [Lee Robinson Website](https://leerob.io/)
-- [Papermod Hugo Theme](https://adityatelange.github.io/hugo-PaperMod/)
 - [Brittany Chiang Website](https://brittanychiang.com/)
 - [Max Böck Website](https://mxb.dev/)
 
-The digital art in the hero section was illustrated by a friend of mine ([Swann Fevian Kyaw](https://www.facebook.com/bon.zai.3910) [@ToonHa](https://www.facebook.com/ToonHa-102639465752883))
-
 ## Author
 
-- [@satnaing](https://satnaing.dev)
+- **Vyom Nikhra** - [GitHub](https://github.com/vyom-nikhra) | [LinkedIn](https://linkedin.com/in/vyom-nikhra) | [Instagram](https://instagram.com/vyom_nikhra)
