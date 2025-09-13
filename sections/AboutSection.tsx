@@ -9,7 +9,7 @@ import { useSection } from "context/section";
 import useOnScreen from "hooks/useOnScreen";
 import useScrollActive from "hooks/useScrollActive";
 
-import satNaing from "../public/satnaing.webp";
+import vyomNikhra from "../public/Vyom1.jpg";
 import AboutBgSvg from "@/components/AboutBgSvg";
 import EduGroup from "@/components/EduGroup";
 
@@ -102,11 +102,11 @@ const AboutSection: React.FC = () => {
   return (
     <div
       ref={sectionRef}
-      className="about-panel bg-white dark:bg-[#1B2731] relative"
+      className="about-panel bg-white dark:bg-[#1B2731] relative min-h-[600px] lg:min-h-[650px]"
     >
-      <section id="whoami" className="section">
+      <section id="whoami" className="section py-8 md:py-12 lg:py-16">
         <RoughNotationGroup>
-          <div className="text-center">
+          <div className="text-center mb-8 lg:mb-12">
             <RoughNotation
               type="underline"
               color={`${
@@ -119,8 +119,8 @@ const AboutSection: React.FC = () => {
               <h2 className="section-heading">Who am I?</h2>
             </RoughNotation>
           </div>
-          <div className="md:grid grid-rows-5 lg:grid-rows-6 grid-cols-5">
-            <div className="col-start-1 col-end-3 row-start-1 row-end-4 lg:row-end-7 lg:col-start-1 lg:col-end-3 flex justify-center items-center py-4 lg:mb-[20%]">
+          <div className="md:grid md:grid-cols-5 lg:grid-cols-5 gap-6 md:gap-8 lg:gap-12 items-start">
+            <div className="md:col-span-2 lg:col-span-2 flex justify-center items-start py-4">
               <div className="relative w-72">
                 <svg
                   width="96"
@@ -135,11 +135,11 @@ const AboutSection: React.FC = () => {
 
                 <div className="profile-picture overflow-hidden md:overflow-visible rounded-md md:shadow-2xl">
                   <Image
-                    src={satNaing}
+                    src={vyomNikhra}
                     width={1700}
                     height={1790}
                     priority
-                    alt="Sat Naing profile picture"
+                    alt="Vyom Nikhra profile picture"
                     className="rounded-md"
                   />
                 </div>
@@ -168,22 +168,21 @@ const AboutSection: React.FC = () => {
               </div>
             </div>
 
-            <p className="col-start-1 col-end-3 row-start-4 row-end-6 lg:row-start-1 lg:row-end-2 lg:col-start-3 lg:col-end-6 lg:ml-8 lg:mt-auto about-intro">
-              With 4+ years of comprehensive experience in web application
-              development, I have polished my skills in both frontend and
-              backend development. In addition to my hands-on experience in web
-              development, my education has also played a critical role in
-              providing a strong foundation for my career.
-            </p>
+            <div className="md:col-span-3 lg:col-span-3 space-y-6">
+              <p className="about-intro">
+                With a strong passion for Artificial Intelligence, Machine Learning, 
+                and Data Science, I am advancing my expertise through academic research 
+                and practical projects. As the AI/ML Lead of the IOTA Club, I engage in hackathons 
+                and collaborative initiatives, while continuously expanding my 
+                knowledge and applying technology to address real-world challenges.
+              </p>
 
-            <div
-              className="col-start-3 col-end-6 row-start-1 row-end-6 lg:row-start-2 lg:row-end-7 md:ml-8 place-content-end"
-              ref={eduRef}
-            >
-              <p className="edu-bg my-4">Here is my educational background.</p>
-              {educationInfo.map((edu) => (
-                <EduGroup edu={edu} key={edu.id} />
-              ))}
+              <div ref={eduRef}>
+                <p className="edu-bg mb-6 font-medium text-lg">Here is my educational background.</p>
+                {educationInfo.map((edu) => (
+                  <EduGroup edu={edu} key={edu.id} />
+                ))}
+              </div>
             </div>
           </div>
         </RoughNotationGroup>
@@ -197,29 +196,24 @@ const AboutSection: React.FC = () => {
 const educationInfo = [
   {
     id: 1,
-    title: "B.Sc (Hons) in Computing",
-    subTitle: "Edinburgh Napier University | 2018 ~ 2019",
+    title: "B.Tech in Computer Science and Engineering (UG-3)",
+    subTitle: "IIIT Sri City | 2023 – Present",
     list: [
-      "Studied computer science, software development, DevOps",
-      "Graduated with First Class Honours",
-      "Got merit in 7 modules out of 9",
+      "Studying core computer science, AI/ML, and data science-related courses",
+      "Engaged in research projects and technical clubs",
+      "Current CGPA: 9.6 / 10",
     ],
   },
   {
     id: 2,
-    title: "HND in Computing & System Development",
-    subTitle: "Info Myanmar University | 2016 - 2018",
+    title: "High School (PCM with Computer Science)",
+    subTitle: "St.Joseph's Co-Ed School | 2019 - 2021",
     list: [
-      "Studied modules specializing in software development",
-      "Passed HND with overall Merit",
+      "Built a strong foundation in mathematics, physics, and programming",
+      "Percentage: 87.4% (CBSE)",
     ],
   },
-  {
-    id: 3,
-    title: "IELTS",
-    subTitle: "British Council Myanmar | 2017",
-    list: ["Got overall band score 6.5."],
-  },
 ];
+
 
 export default AboutSection;

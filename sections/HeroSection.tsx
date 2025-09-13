@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 import LinkButton from "../components/LinkButton";
 
-import satNaing from "../public/satnaing-illustration.webp";
+import vyomNikhra from "../public/satnaing-illustration.webp";
 import laptop from "../public/laptop-illustration.webp";
 
 const HeroSection: React.FC = () => {
@@ -84,26 +84,26 @@ const HeroSection: React.FC = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative mt-16 sm:mt-8 pt-8 lg:pt-0 px-4 sm:px-8 md:px-20 max-w-5xl sm:pb-24 min-h-[769px] mx-auto sm:flex sm:flex-col sm:justify-center sm:items-center lg:flex-row-reverse"
+      className="relative mt-16 sm:mt-8 pt-8 lg:pt-0 px-4 sm:px-8 md:px-20 max-w-5xl pb-12 sm:pb-16 lg:pb-20 min-h-[769px] mx-auto sm:flex sm:flex-col sm:justify-center sm:items-center lg:flex-row-reverse"
     >
       <span
         aria-hidden="true"
         className="bg-text absolute -top-36 rotate-12 text-gray-100 dark:text-[#1f2e3a] text-9xl scale-150 tracking-wide font-bold select-none pointer-events-none text-center z-0"
       >
-        PASSIONATE PROGRAMMER FREELANCER FULL-STACK DEVELOPER
+        RESEARCHER ARTIFICIAL INTELLIGENCE DATA SCIENCE PROGRAMMER INNOVATOR
       </span>
 
       <div className="image-animation z-10 select-none mt-0 xs:mt-6 sm:mt-14 lg:mt-0 px-0 mx-auto lg:p-0 lg:basis-1/3">
         <div className="relative w-72 md:w-80 h-80 flex items-center mx-auto">
           <div className="absolute pointer-events-none scale-90 xs:scale-95 mx-auto">
             <Image
-              src={satNaing}
+              src={vyomNikhra}
               width={1177}
               height={1374}
               priority
               id="character-illustration"
-              aria-label="Sat Naing character illustration levitating with a Macbook"
-              alt="Sat Naing character illustration"
+              aria-label="Vyom Nikhra character illustration levitating with a Macbook"
+              alt="Vyom Nikhra character illustration"
             />
           </div>
           <div className="laptop absolute top-14 sm:top-16 left-0 scale-[.41] xs:scale-[.45] pointer-events-none">
@@ -124,24 +124,23 @@ const HeroSection: React.FC = () => {
         </span>
         <div className="overflow-hidden">
           <h1 className="text-animation text-4xl md:text-5xl lg:text-7xl md:my-2 font-semibold my-1">
-            Sat Naing
+            Vyom Nikhra
           </h1>
         </div>
         <div className="overflow-hidden">
           <span className="text-animation text-2xl md:text-3xl lg:text-5xl block md:my-3 text-marrsgreen dark:text-carrigreen font-medium">
-            A Full-stack Developer
+            AI & Data Science Student
           </span>
         </div>
         <div className="mt-2 my-4 md:mb-8">
           <p className="mb-1">
-            I am a Full-Stack Developer with a passion for delivering
-            exceptional results.
+            I am an undergraduate student at IIIT Sri City with a strong passion for 
+            AI, Machine Learning, and Data Science.
           </p>
           <p>
-            With my expertise in React and NextJS on the frontend, and PHP,
-            CodeIgniter, NodeJS, and Express on the backend, I bring a unique
-            combination of technical skills and creative problem-solving to
-            every project I work on.
+            My current research focuses on Spatial Super Resolution for satellite 
+            images, and I am driven by curiosity to solve complex problems and build 
+            impactful solutions through technology.
           </p>
         </div>
         <LinkButton href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}>

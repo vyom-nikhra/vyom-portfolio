@@ -8,12 +8,7 @@ import { useSection } from "context/section";
 import useOnScreen from "hooks/useOnScreen";
 import useScrollActive from "hooks/useScrollActive";
 
-import terminalPortfolio from "public/projects/terminal-portfolio.webp";
-import haruFashion from "public/projects/haru-fashion.webp";
-import haruApi from "public/projects/haru-api.webp";
-import astroPaper from "public/projects/astro-paper.webp";
-import nextBookstore from "public/projects/next-bookstore.webp";
-import shadcnAdmin from "public/projects/shadcn-admin.webp";
+import demeterAi from "public/projects/Chatbot.png";
 
 const ProjectSection: React.FC = () => {
   const { theme } = useTheme();
@@ -55,7 +50,7 @@ const ProjectSection: React.FC = () => {
       <div className="others text-center mb-16">
         Other projects can be explored in{" "}
         <a
-          href="https://github.com/satnaing"
+          href="https://github.com/vyom-nikhra"
           className="font-medium underline link-outline text-marrsgreen dark:text-carrigreen whitespace-nowrap"
         >
           my github profile
@@ -67,119 +62,40 @@ const ProjectSection: React.FC = () => {
 
 const projects = [
   {
-    title: "AstroPaper",
-    type: "Frontend",
+    title: "Demeter AI",
+    type: "Full Stack / AI",
     image: (
       <Image
-        src={astroPaper}
+        src={demeterAi}
         sizes="100vw"
         fill
-        alt="AstroPaper"
+        alt="Demeter AI"
         className="transition-transform duration-500 hover:scale-110 object-cover"
       />
     ),
-    desc: "A minimal, accessible and SEO-friendly Astro blog theme. One of the most starred blog templates built with Astro.",
-    tags: ["Astro", "TypeScript", "React", "TailwindCSS"],
-    liveUrl: "https://astro-paper.pages.dev/",
-    codeUrl: "https://github.com/satnaing/astro-paper",
-    bgColor: "bg-[#9FD0E3]",
-    githubApi: "https://api.github.com/repos/satnaing/astro-paper",
+    desc: "Demeter AI provides smart farming solutions by analyzing soil, weather, and crop data. Features include crop recommendation, fertilizer suggestions, disease detection via image recognition, real-time weather integration, and a multilingual AI chatbot for farming advice. Built with Flask, TensorFlow, and scikit-learn.",
+    tags: ["Python", "Flask", "TensorFlow", "scikit-learn", "AI", "Machine Learning", "Smart Farming"],
+    liveUrl: "", // Add live demo if available
+    codeUrl: "https://github.com/patelatwork/DemeterAi-Project",
+    bgColor: "bg-[#D0F0C0]",
+    githubApi: "https://api.github.com/repos/patelatwork/DemeterAi-Project",
   },
   {
-    title: "Terminal Portfolio",
-    type: "Frontend",
+    title: "Adobe Hackathon Project",
+    type: "Full Stack / AI",
     image: (
-      <Image
-        src={terminalPortfolio}
-        sizes="100vw"
-        fill
-        alt="Terminal Portfolio"
-        className="transition-transform duration-500 hover:scale-110 object-cover"
-      />
+      <div className="w-full h-full bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center">
+        <span className="text-white text-2xl font-bold">ADOBE</span>
+      </div>
     ),
-    desc: "My portfolio website in terminal version developed with React and TypeScript. ",
-    tags: ["React", "TypeScript", "Styled-Components"],
-    liveUrl: "https://terminal.satnaing.dev/",
-    codeUrl: "https://github.com/satnaing/terminal-portfolio",
-    bgColor: "bg-[#B4BEE0]",
-    githubApi: "https://api.github.com/repos/satnaing/terminal-portfolio",
-  },
-  {
-    title: "Haru Fashion",
-    type: "Frontend",
-    image: (
-      <Image
-        src={haruFashion}
-        sizes="100vw"
-        fill
-        alt="Haru Fashion App"
-        className="transition-transform duration-500 hover:scale-110 object-cover"
-      />
-    ),
-    desc: "An ecommerce web application where users can browse various products, add to wishlist, add to cart, and make purchase. Available in English and Burmese languages.",
-    tags: ["NextJS", "TypeScript", "TailwindCSS", "ContextAPI"],
-    liveUrl: "https://haru-fashion.vercel.app/",
-    codeUrl: "https://github.com/satnaing/haru-fashion",
-    bgColor: "bg-[#A6CECE]",
-    githubApi: "https://api.github.com/repos/satnaing/haru-fashion",
-  },
-  {
-    title: "Haru API",
-    type: "Backend",
-    image: (
-      <Image
-        src={haruApi}
-        sizes="100vw"
-        fill
-        alt="Haru API"
-        className="transition-transform duration-500 hover:scale-110 object-cover"
-      />
-    ),
-    desc: "A RESTful API developed for Haru fashion ecommerce project. Include CRUD operations, authentication, authorization, forgot/reset password and full-text search.",
-    tags: ["ExpressJS", "TypeScript", "PostgreSQL", "Prisma"],
-    liveUrl: "https://satnaing.github.io/haru-api/",
-    codeUrl: "https://github.com/satnaing/haru-api",
-    bgColor: "bg-[#C5E4E7]",
-    githubApi: "https://api.github.com/repos/satnaing/haru-api",
-  },
-  {
-    title: "Next Bookstore",
-    type: "Frontend + HeadlessCMS",
-    image: (
-      <Image
-        src={nextBookstore}
-        sizes="100vw"
-        fill
-        alt="Next Bookstore"
-        className="transition-transform duration-500 hover:scale-110 object-cover"
-      />
-    ),
-    desc: "An online bookstore developed using NextJS 13 with appDir and StrapiCMS.",
-    tags: ["NextJS", "Radix UI ", "TailwindCSS", "TanstackQuery", "StrapiCMS"],
-    liveUrl: "https://nextbookstore.vercel.app/",
-    codeUrl: "https://github.com/satnaing/next-bookstore",
-    bgColor: "bg-[#EBF4F4]",
-    githubApi: "https://api.github.com/repos/satnaing/next-bookstore",
-  },
-  {
-    title: "Shadcn Admin",
-    type: "Backend",
-    image: (
-      <Image
-        src={shadcnAdmin}
-        sizes="100vw"
-        fill
-        alt="Shadcn Admin"
-        className="transition-transform duration-500 hover:scale-110 object-cover"
-      />
-    ),
-    desc: "Admin Dashboard UI built with Shadcn and Vite. Built with responsiveness and accessibility in mind.",
-    tags: ["ShadcnUI", "Vite", "React Router", "TypeScript"],
-    liveUrl: "https://shadcn-admin.netlify.app/",
-    codeUrl: "https://github.com/satnaing/shadcn-admin",
-    bgColor: "bg-[#FBFBFB]",
-    githubApi: "https://api.github.com/repos/satnaing/shadcn-admin",
+    desc: "Developed a containerized solution for Adobe Challenge 1B with integrated Round 1A PDF heading extraction. Processes PDFs to extract hierarchical headings (titles, H1, H2, H3) and performs semantic analysis to generate ranked, structured outputs based on persona and job requirements. Designed for offline use with Docker deployment.",
+    tags: ["Python", "Docker", "PDF Parsing", "JSON", "AI", "Machine Learning"],
+    liveUrl: "",
+    codeUrl: "https://github.com/vyom-nikhra/Adobe-Challenge-1-B",
+    bgColor: "bg-[#FFF3E6]",
+    githubApi: "https://api.github.com/repos/vyom-nikhra/Adobe-Challenge-1-B",
   },
 ];
+
 
 export default ProjectSection;
