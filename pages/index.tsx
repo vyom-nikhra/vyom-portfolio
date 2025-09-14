@@ -8,6 +8,9 @@ import SocialLinks from "@/components/SocialLinks";
 import HeroSection from "@/sections/HeroSection";
 import AboutSection from "@/sections/AboutSection";
 import ProjectSection from "@/sections/ProjectSection";
+import SkillsSection from "@/sections/SkillsSection";
+import AchievementsSection from "@/sections/AchievementsSection";
+import ResumeSection from "@/sections/ResumeSection";
 import ContactSection from "@/sections/ContactSection";
 import Footer from "@/components/Footer";
 
@@ -38,6 +41,9 @@ const Home: NextPage = () => {
             <HeroSection />
             <AboutSection />
             <ProjectSection />
+            <SkillsSection />
+            <AchievementsSection />
+            <ResumeSection />
             <ContactSection />
           </main>
           <SocialLinks page="index" />

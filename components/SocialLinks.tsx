@@ -120,6 +120,18 @@ const navLinks = [
     text: "Projects",
   },
   {
+    url: "#skills",
+    text: "Skills",
+  },
+  {
+    url: "#achievements",
+    text: "Achievements",
+  },
+  {
+    url: "#resume",
+    text: "Resume",
+  },
+  {
     url: "#contact",
     text: "Contact",
   },
